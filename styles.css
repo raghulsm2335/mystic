@@ -1,0 +1,226 @@
+header a{
+    color: white;
+}
+header{
+    background-image: linear-gradient(to bottom left,rgba(8, 225, 91, 0.414),rgba(54, 9, 201, 0.44),rgba(12, 237, 249, 0.485));
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+ 
+}
+
+/* header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+} */
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card {
+    background: #ffffff;
+    border-top: 5px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    color: #3498db;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.course-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* Circle Shape for Cards */
+.shape-circle::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: #3498db;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.course-card:hover::before {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+/* Background Animation */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(140,164,168,0.29184173669467783) 100%);
+    background-size: 300% 300%;
+    animation: gradient-animation 5s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+.contact-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.contact-info {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.contact-info h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .info-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.contact-info .info-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.radio-btn {
+    display: inline-block;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007bff;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+.map-container {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.operating-hours {
+    background-color: #007bffd3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    text-align: center;
+    margin: 50px;
+}
+
+.operating-hours h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.operating-hours p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-style: italic;
+}
